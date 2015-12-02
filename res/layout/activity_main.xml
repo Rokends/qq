@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    >
+
+    <ListView
+        android:id="@+id/list"
+       	android:layout_width="match_parent"  
+        android:layout_height="wrap_content"
+       	android:layout_above="@+id/commentLinearLayout"
+        android:layout_alignParentTop="true"  
+        android:divider="@android:color/transparent"  
+        android:dividerHeight="15dip"  
+        android:scrollbars="none" 
+        />
+    
+    <LinearLayout  
+        android:id="@+id/commentLinearLayout"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true"  
+        android:background="#e0e0e0"  
+        android:orientation="horizontal" >
+        
+        <EditText
+            android:id="@+id/msgEditText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:hint="发送消息"
+            />
+        <Button
+            android:id="@+id/msgSend"   
+            style="?@android:attr/buttonStyleSmall"
+            android:layout_width="0dip"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="2"  
+            android:text="发送" />
+            
+ 
+ </LinearLayout>  
+</RelativeLayout>
